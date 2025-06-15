@@ -47,7 +47,7 @@ resource "aws_instance" "web" {
 resource "aws_instance" "web2" {
   ami                    = "ami-0f918f7e67a3323f0" #change your ami value according to your aws instance 
   instance_type          = "t2.medium"
-  key_name               = "my key"
+  key_name               = "saru"
   vpc_security_group_ids = [aws_security_group.Jenkins-sg.id]
   tags = {
     Name = "Monitering via grafana"
